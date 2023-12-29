@@ -1,5 +1,97 @@
-fonts-roboto-mono (0.20200508-1) UNRELEASED; urgency=medium
+fonts-roboto-mono (0.20200508-1) unstable; urgency=medium
 
-  * Initial Release.
+  [ pichotta ]
+  * Create .gitignore
 
- -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Fri, 29 Dec 2023 12:38:22 -0500
+  [ Jill Pichotta ]
+  * add sources converted from TTFs
+  * finish compatibillizing extreme poles
+  * made Regular compatible with extreme poles
+  * beta2 design space to look at Thin > Regular
+
+  [ Denis Moyogo Jacquerye ]
+  * Rename source/ as sources/
+  * Rename RobotoMonoBeta.designspace
+  * Format designspace
+  * Add axis mapping
+  * Add instaces for masters
+  * Add requirements.txt
+  * Add build.sh
+  * Define base master, fix axis min, max, default
+  * Only build TTFs, keep overlaps (toolchain restricted by qcurve)
+  * Remove instances/
+  * Remove uni0002, uni0009 (fontbakery com.google.fonts/check/family/control_chars)
+  * Double encode macronmod 02c9 as macron 00AF
+  * Double encode slash 002F as divisionslash 2215 (fontbakery com.google.fonts/check/glyph_coverage)
+  * Remove RobotoMonoBeta2.designspace
+  * Remove duplicate name records in UFOs
+  * Remove uniqueID and nameVersion, will be generated
+  * Use RobotoMono-Regular.ufo
+  * Remove name records from Regular
+  * Remove uniqueID and nameVersion, will be generated
+  * autohint static fonts
+  * familyname="Roboto Mono", not "RobotoMono"
+  * Update copyright for fontbakery
+  * Set openTypeOS2VendorID=GOOG
+  * Set copyright string for fontbakery
+  * fix-isfixedpitch
+  * Add unicode 0394 to Delta, 03A9 to Omega
+  * Add smcp feature
+  * Bump version 2.1 -> 3.0
+  * Update requirements.txt
+  * Add fonts
+
+  [ Jill Pichotta ]
+  * scaled or rotated components
+  * Remove Alpha and Beta2 ttf
+  * Build.sh
+  * Converted TTFs
+  * Decompose complex transformations
+  * Compatibilize ASCII
+
+  [ Victoria Rushton ]
+  * Compatibilize italics, generate and test
+
+  [ Jill Pichotta ]
+  * Accent adjustments
+  * Update RobotoMonoItalic.designspace
+  * Fix Tbar
+  * Fix inconsistent positioning
+
+  [ Denis Moyogo Jacquerye ]
+  * Rename RobotoMonoItalic.designspace as RobotoMono-Italic.designspace
+  * build.sh: build Italic
+  * Remove empty public.postscriptNames
+  * Italics Bump version 2.1 -> 3.0
+  * Rename fonts/vf as fonts/variable
+  * Update fonts
+  * Double encode slash as 002F and 2215
+  * Italic: set italicAngle
+  * Italic: drop openTypeNameVersion
+  * Remove redundant names
+  * build.sh: fix-isfixedpitch for static fonts
+  * RobotoMono-Italic postscriptName
+  * Italic: Remove openTypeOS2Selection
+  * Italic: Add stylemap names
+  * Italic: Remove uni0002, uni0009 (fontbakery com.google.fonts/check/family/control_chars)
+  * Update fonts
+
+  [ Jill Pichotta ]
+  * Fit glyphs on the monowidth
+  * Change glyphs with zero width to fonts monowidth value
+  * Delete /NULL
+
+  [ Denis Moyogo Jacquerye ]
+  * Add stat.stylespace and use statmake for STAT table
+  * Update fonts
+  * Add stat.stylespace and use statmake for STAT table
+  * Italic: Add features
+  * Update uniFFFD for font yMin, yMax and win metrics
+  * Update brevegravecomb to match breveacutecomb
+  * Drop unacceptable control characters uni0002, uni0009
+  * Update fonts
+
+  [ Dimitry Ishenko ]
+  * Add Debian packaging
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Fri, 29 Dec 2023 13:11:27 -0500
