@@ -1,3 +1,28 @@
+fonts-roboto-mono (3.001-1) unstable; urgency=medium
+
+  [ Dimitry Ishenko ]
+  * d/control: compat level 13
+  * d/copyright: update
+  * d/install: switch to OTF fonts
+  * Merge tag 'v3.001'
+
+  [ Marc Foley ]
+  * regenerated fonts
+  * fix requirements
+  * add italic
+  * Merge pull request #77 from googlefonts/2025-master
+  * regen fonts
+  * Bump font version
+  * rm redundant files
+  * fix panose
+  * change license from apache to ofl
+  * use gftools builder
+
+  [ Eli Heuer ]
+  * Add Apache License 2.0
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Fri, 04 Jul 2025 17:08:34 -0400
+
 fonts-roboto-mono (0.20200508-1) unstable; urgency=medium
 
   [ pichotta ]
