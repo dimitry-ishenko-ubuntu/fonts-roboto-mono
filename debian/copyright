@@ -3,9 +3,11 @@ Upstream-Name: RobotoMono
 Source: https://github.com/googlefonts/RobotoMono
 
 Files: *
-Copyright: 2019-2020 Google Inc.
-License: Apache-2.0
+Copyright:
+ 2015, The Roboto Mono Project Authors (https://github.com/googlefonts/robotomono)
+ 2019-2020, Google Inc, https://fonts.google.com
+License: OFL-1.1
 
 Files: debian/*
-Copyright: 2023 Dimitry Ishenko <dimitry.ishenko@gmail.com>
-License: GPL-3+
+Copyright: 2023-2025, Dimitry Ishenko <dimitry.ishenko@gmail.com>
+License: GPL-2+
